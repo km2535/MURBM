@@ -1,0 +1,31 @@
+.btn{
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 2px #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 600;
+    height: 3.5em;
+    letter-spacing: 0.25em;
+    line-height: 3.5em;
+    padding: 0 1.75em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: all 0.5s;
+}
+.font {
+  float: left;
+}
+.arrow{
+  margin-left: 20px;
+}
+
+.btn:hover{
+  color: #5597e2;
+  box-shadow: inset 0 0 0 2px #5597e2;
+}

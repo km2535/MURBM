@@ -1,0 +1,143 @@
+.container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: 70px;
+  width: 100vw;
+  height: 100vh;
+}
+.banner{
+  width: 100vw;
+  height: 40%;
+  background: linear-gradient(278.67deg, rgba(111, 195, 223, 0.5096) 1.14%, rgba(111, 195, 223, 0.610748) 10.34%, rgba(111, 195, 223, 0.854886) 34.02%, rgba(111, 195, 223, 0.91) 49.61%);
+}
+.bannerTitle{
+  position: absolute;
+  color: white;
+  font-variant: small-caps;
+  left: 50px;
+  top: 70px;  
+  animation-name: bannerTitle;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+}
+.title{
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 70px;
+}
+.bannerSubTittle{
+  font-size: 25px;
+  line-height: 40px;
+}
+.bannerSubTxt{
+  font-size: 16px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.bannerImg{
+  position: relative;
+  width: 100vw;
+  top: 0;
+  z-index: -999;
+}
+.content{
+  display: flex;
+  flex-direction: row;
+  height: 60vh;
+}
+.contentImg{
+  animation-name: contentImgMove;
+  animation-duration: 0.8s;
+  animation-timing-function: linear;
+  animation-iteration-count: initial;
+  width: 40vw;
+  height: 60vh;
+}
+.describe{
+  background-color: #061A4E;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  animation-name: describe;
+  animation-timing-function: linear;
+  animation-duration: 0.8s;
+  animation-iteration-count: initial;
+}
+.first,.sec,.third{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 40%;
+}
+.sec{
+  height: 50%;
+}
+.third{
+  width: 50%;
+  height: 100%;
+}
+.firstTitle,.secTitle,.thirdTitle{
+  height: 10%;
+  color: white;
+  padding: 20px 20px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.firstDesc,.secDesc,.thirdDesc{
+  padding: 10px 20px;
+  height: 90%;
+  color: white;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 200;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@keyframes banner {
+  0%{
+    transform: translateY(-50vh);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes contentImgMove {
+  0%{
+    transform: translateX(-50vw);
+    opacity: 0.2;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes bannerTitle {
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  } 
+}
+@keyframes describe {
+  0%{
+    transform: translateX(50vw);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  } 
+  
+}

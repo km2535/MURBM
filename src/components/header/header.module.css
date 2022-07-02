@@ -1,0 +1,36 @@
+.header{
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 120px;
+}
+.logo{
+  position: fixed;
+  width: 100vw;
+  height: 120px;
+  cursor: pointer;
+}
+.logoImg{
+  position: absolute;
+  width: 150px;
+  height: 95px;
+  left: 0px;
+  top: -15px;
+}
+.nonBack{
+  width: 100vw;
+  height: 0;
+}
+.back{
+  width: 100vw;
+  height: 70px;
+  background: #112A6A;
+  transition: height 1s;
+}
+.home{
+  position: absolute;
+  top: 25px;
+  left: 95vw;
+  font-size: 20px;
+  color: white;
+}

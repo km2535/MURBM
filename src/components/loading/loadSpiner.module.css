@@ -1,0 +1,26 @@
+.spinerContainer{
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  height: 100vh;
+  transform: translateY(45%);
+}
+.spinner{
+  font-size: 2em;
+  color: darkgray;
+  animation: spinner 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spinner {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}

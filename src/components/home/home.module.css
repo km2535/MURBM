@@ -1,0 +1,76 @@
+
+.backImage {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url("../../../public/images/shake1.png") ;
+    background-color: linear-gradient(291.63deg, rgba(17, 42, 106, 0.4704) -3.7%, rgba(23, 45, 101, 0.825263) 21.63%, rgba(2, 24, 81, 0.84) 57.09%);;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(4px);
+    transition: all 1s;
+    z-index: -999;
+}
+.backImage::before{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(291.63deg, rgba(17, 42, 106, 0.4704) -3.7%, rgba(23, 45, 101, 0.825263) 21.63%, rgba(2, 24, 81, 0.84) 57.09%);
+    mix-blend-mode: normal;
+    backdrop-filter: blur(4px);
+    position: absolute;
+    top: 0;
+}
+.hiddenHome > .backImage{
+    height: 0;
+}
+.hiddenHome .inner, .hiddenHome .content{
+    display: none;
+}
+
+.major{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 45%;
+    transform: translateX(-25%);
+    top: 300px;
+    font-family: 'Estedad-VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5em;
+    line-height: 50px;
+    overflow: visible;
+    color: #FFFFFF;
+}
+.major h2{
+    font-size: 0.7em;
+}
+.major h2::after{
+    position: absolute;
+    content: "";
+    width: 1109px;
+    height: 0px;
+    left: 0;
+    top: 110px;
+    border-bottom: 5px solid #FFFFFF;
+}
+.content{
+    position: absolute;
+    width: 100%;
+    left: 45%;
+    transform: translateX(-25%);
+    height: auto;
+    top: 470px;
+    font-family: 'Estedad-VF';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 2em;
+    display: flex;
+    color: #FFFFFF;
+}
+.content .sub{
+  width: 40%;
+}
