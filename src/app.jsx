@@ -1,12 +1,20 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
+import { Cloudinary } from "@cloudinary/url-gen";
 import "./app.css";
-import Partner from "./components/contents/partner";
+import Activities from "./components/contents/activities/activities";
+import Partner from "./components/contents/partner/partner";
 import Header from "./components/header/header";
 import Home from "./components/home/home";
 import Model from "./components/model/model";
+import Resource from "./components/contents/resource/resource";
 
 function App() {
+  const cld = new Cloudinary({
+    cloud: {
+      cloudName: "individualdevelpment",
+    },
+  });
   const [view, setView] = useState(false);
 
   const handlerView = () => {
@@ -21,14 +29,16 @@ function App() {
           path="/"
           element={
             <>
-              <Home view={view} handlerView={handlerView} />
+              <Home view={view} handlerView={handlerView} cld={cld} />
               <div className={view === true ? "visibleModel" : "hiddenModel"}>
-                <Model view={view} />
+                <Model view={view} cld={cld} />
               </div>
             </>
           }
         />
-        <Route path="/partner" element={<Partner />} />
+        <Route path="/partner" element={<Partner cld={cld} />} />
+        <Route path="/activities" element={<Activities cld={cld} />} />
+        <Route path="/resources" element={<Resource cld={cld} />} />
       </Routes>
     </>
   );

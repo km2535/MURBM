@@ -2,8 +2,19 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import LoadSpiner from "../loading/loadSpiner";
 import style from "./model.module.css";
+import { AdvancedImage } from "@cloudinary/react";
 
-const Model = ({ view, onArticle }) => {
+const Model = ({ view, cld }) => {
+  const activity = cld.image("murbm/activity.webp");
+  const partnership = cld.image("murbm/partnership2.webp");
+  const resource = cld.image("murbm/resource.png");
+  const value = cld.image("murbm/value.jpg");
+  const segments = cld.image("murbm/segments.webp");
+  const com = cld.image("murbm/com.webp");
+  const cost = cld.image("murbm/cost.webp");
+  const customer = cld.image("murbm/customer.webp");
+  const channel = cld.image("murbm/channel.jpg");
+
   const [model, setModel] = useState(false);
   const [resize, setResize] = useState(false);
 
@@ -36,10 +47,9 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent}>
             <Link className={style.link} to="/partner">
               <div id={style.modelPartner}>
-                <img
+                <AdvancedImage
+                  cldImg={partnership}
                   className={style.modelImg}
-                  src={"/images/partnership.webp"}
-                  alt=""
                 />
                 <span className={style.modelTitle}>
                   Key
@@ -52,11 +62,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent}>
             <Link className={style.link} to="/activities">
               <div id={style.modelActivities}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/activity.webp"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={activity} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Key
                   <br />
@@ -66,11 +72,7 @@ const Model = ({ view, onArticle }) => {
             </Link>
             <Link className={style.link} to="/resources">
               <div id={style.modelResource}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/resource.png"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={resource} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Key
                   <br />
@@ -82,11 +84,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent}>
             <Link className={style.link} to="/proposition">
               <div id={style.modelProperty}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/value.jpg"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={value} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Value
                   <br />
@@ -98,11 +96,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent}>
             <Link className={style.link} to="/relationships">
               <div id={style.modelRelationship}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/customer.webp"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={customer} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Customer
                   <br />
@@ -112,11 +106,7 @@ const Model = ({ view, onArticle }) => {
             </Link>
             <Link className={style.link} to="/channel">
               <div id={style.modelChannel}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/channel.jpg"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={channel} className={style.modelImg} />
                 <span className={style.modelTitle}>Channel</span>
               </div>
             </Link>
@@ -124,11 +114,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent}>
             <Link className={style.link} to="/segments">
               <div id={style.modelSegment} title="segments">
-                <img
-                  className={style.modelImg}
-                  src={"/images/segments.webp"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={segments} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Customer
                   <br />
@@ -140,11 +126,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent} id={style.modelStructure}>
             <Link className={style.link} to="/structure">
               <div className={style.modelStructure}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/cost.webp"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={cost} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Cost
                   <br />
@@ -156,11 +138,7 @@ const Model = ({ view, onArticle }) => {
           <article className={style.modelContent} id={style.modelScreams}>
             <Link className={style.link} to="/revenue">
               <div className={style.modelScreams}>
-                <img
-                  className={style.modelImg}
-                  src={"/images/com.webp"}
-                  alt=""
-                />
+                <AdvancedImage cldImg={com} className={style.modelImg} />
                 <span className={style.modelTitle}>
                   Revenue
                   <br />

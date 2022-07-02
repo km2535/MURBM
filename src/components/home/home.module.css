@@ -1,29 +1,31 @@
-
+.inner{
+    z-index: 9999;
+}
 .backImage {
     position: absolute;
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: url("../../../public/images/shake1.png") ;
-    background-color: linear-gradient(291.63deg, rgba(17, 42, 106, 0.4704) -3.7%, rgba(23, 45, 101, 0.825263) 21.63%, rgba(2, 24, 81, 0.84) 57.09%);;
-    background-repeat: no-repeat;
-    background-size: cover;
-    backdrop-filter: blur(4px);
     transition: all 1s;
     z-index: -999;
 }
-.backImage::before{
+.frontImage::before{
     content: "";
+    position: absolute;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background: linear-gradient(291.63deg, rgba(17, 42, 106, 0.4704) -3.7%, rgba(23, 45, 101, 0.825263) 21.63%, rgba(2, 24, 81, 0.84) 57.09%);
     mix-blend-mode: normal;
     backdrop-filter: blur(4px);
-    position: absolute;
-    top: 0;
+    transition: all 1s;
 }
-.hiddenHome > .backImage{
+
+.hiddenHome > .frontImage::before{
     height: 0;
+}
+.hiddenHome > .frontImage >.backImage{
+    opacity: 0;
 }
 .hiddenHome .inner, .hiddenHome .content{
     display: none;
@@ -43,6 +45,7 @@
     line-height: 50px;
     overflow: visible;
     color: #FFFFFF;
+    z-index: 99;
 }
 .major h2{
     font-size: 0.7em;
@@ -70,6 +73,7 @@
     line-height: 2em;
     display: flex;
     color: #FFFFFF;
+    z-index: 99;
 }
 .content .sub{
   width: 40%;

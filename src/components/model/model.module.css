@@ -30,7 +30,7 @@
   height: 100%;
 }
 #modelActivities, #modelResource,#modelRelationship, #modelChannel{
-  height: 50vh;
+  height: 30vh;
 }
 #modelStructure, #modelScreams{
   width: 50vw;

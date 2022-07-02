@@ -1,6 +1,11 @@
 import React from "react";
 import style from "./partner.module.css";
-const Partner = (props) => {
+import { AdvancedImage } from "@cloudinary/react";
+
+const Partner = ({ cld }) => {
+  const partnership = cld.image("murbm/partnership.jpg");
+  const partnership2 = cld.image("murbm/partnership2.webp");
+
   return (
     <section className={style.container}>
       <div className={style.banner}>
@@ -15,18 +20,10 @@ const Partner = (props) => {
             네트워크를 말한다.
           </span>
         </h1>
-        <img
-          className={style.bannerImg}
-          src="/images/partnership.webp"
-          alt=""
-        />
+        <AdvancedImage cldImg={partnership2} className={style.bannerImg} />
       </div>
       <div className={style.content}>
-        <img
-          className={style.contentImg}
-          src="/images/partnership.jpeg"
-          alt=""
-        />
+        <AdvancedImage cldImg={partnership} className={style.contentImg} />
         <div className={style.describe}>
           <div className={style.first}>
             <div className={style.firstTitle}>

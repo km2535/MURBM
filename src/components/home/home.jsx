@@ -1,7 +1,10 @@
 import React from "react";
 import StartBtn from "../startBtn/startBtn";
 import style from "./home.module.css";
-const Home = ({ handlerView, view }) => {
+import { AdvancedImage } from "@cloudinary/react";
+
+const Home = ({ handlerView, view, cld }) => {
+  const shake1 = cld.image("murbm/shake1.png");
   return (
     <>
       <section id={style.banner} className={style.banner}>
@@ -20,7 +23,9 @@ const Home = ({ handlerView, view }) => {
               <StartBtn onHandlerView={handlerView} />
             </div>
           </div>
-          <div className={style.backImage}></div>
+          <div className={style.frontImage}>
+            <AdvancedImage cldImg={shake1} className={style.backImage} />
+          </div>
         </div>
       </section>
     </>
