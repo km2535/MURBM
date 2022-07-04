@@ -8,6 +8,12 @@ import Header from "./components/header/header";
 import Home from "./components/home/home";
 import Model from "./components/model/model";
 import Resource from "./components/contents/resource/resource";
+import Proposition from "./components/contents/proposition/proposition";
+import RelationShip from "./components/contents/relatinsship/relationship";
+import Channel from "./components/contents/channel/channel";
+import Segments from "./components/contents/segments/segments";
+import Structure from "./components/contents/structure/structure";
+import Revenue from "./components/contents/revenue/revenue";
 
 function App() {
   const cld = new Cloudinary({
@@ -39,6 +45,12 @@ function App() {
         <Route path="/partner" element={<Partner cld={cld} />} />
         <Route path="/activities" element={<Activities cld={cld} />} />
         <Route path="/resources" element={<Resource cld={cld} />} />
+        <Route path="/proposition" element={<Proposition cld={cld} />} />
+        <Route path="/relationships" element={<RelationShip cld={cld} />} />
+        <Route path="/channel" element={<Channel cld={cld} />} />
+        <Route path="/segments" element={<Segments cld={cld} />} />
+        <Route path="/structure" element={<Structure cld={cld} />} />
+        <Route path="/revenue" element={<Revenue cld={cld} />} />
       </Routes>
     </>
   );
