@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "https://km2535.github.io/MURBM/static/css/main.14dcee7b.css",
-    "main.js": "https://km2535.github.io/MURBM/static/js/main.460f7827.js",
+    "main.css": "https://km2535.github.io/MURBM/static/css/main.6e704c2b.css",
+    "main.js": "https://km2535.github.io/MURBM/static/js/main.710ea3cb.js",
     "static/media/postit.png": "https://km2535.github.io/MURBM/static/media/postit.e066d609d40cdb7c65cf.png",
     "index.html": "https://km2535.github.io/MURBM/index.html",
-    "main.14dcee7b.css.map": "https://km2535.github.io/MURBM/static/css/main.14dcee7b.css.map",
-    "main.460f7827.js.map": "https://km2535.github.io/MURBM/static/js/main.460f7827.js.map"
+    "main.6e704c2b.css.map": "https://km2535.github.io/MURBM/static/css/main.6e704c2b.css.map",
+    "main.710ea3cb.js.map": "https://km2535.github.io/MURBM/static/js/main.710ea3cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.14dcee7b.css",
-    "static/js/main.460f7827.js"
+    "static/css/main.6e704c2b.css",
+    "static/js/main.710ea3cb.js"
   ]
 }
