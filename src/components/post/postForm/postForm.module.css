@@ -4,14 +4,20 @@
   position: absolute;
   top: 0;
   background-image: url(../../../../public/images/postit.png);
-  width: 18vw;
-  height: 16vw;
+  width: 11vw;
+  height: 10vw;
   background-repeat: no-repeat;
   background-size: contain;
 }
+.close{
+  position: relative;
+  top: 10%;
+  left: 70%;
+  cursor: pointer;
+}
 .title{
   position: relative;
-  top: 50%;
+  top: 35%;
   left: 50%;
   transform: translateX(-54%);
   text-align: center;

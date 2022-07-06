@@ -15,8 +15,7 @@ const Revenue = ({ cld }) => {
           <span className={style.bannerSubTittle}>수익 구조</span>
           <br></br>
           <span className={style.bannerSubTxt}>
-            핵심자원이라는 빌딩 블록은 비즈니스를 원활히 진행하는 데 가장 필요한
-            중요 자산을 말한다.
+            수익원은 기업이 각 고객 세글먼트로부터 창출하는 현금을 의미한다.
           </span>
         </h1>
         <AdvancedImage cldImg={com} className={style.bannerImg} />

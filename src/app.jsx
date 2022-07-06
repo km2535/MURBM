@@ -28,6 +28,7 @@ function App() {
   const [postit, setPostit] = useState(false);
   const [model, setModel] = useState(false);
   const [resize, setResize] = useState(false);
+  const [posts, setPosts] = useState([]);
 
   const handlerView = () => {
     setView(true);
@@ -47,6 +48,17 @@ function App() {
       }, 500);
     }
   }, [resize]);
+  const addPost = (content, x, y) => {
+    setPosts([
+      ...posts,
+      { id: posts.length + 1, x: x, y: y, contents: content },
+    ]);
+  };
+  //console.log(posts);
+  const removePost = (id) => {
+    const post = [...posts];
+    setPosts(post.filter((post) => post.id !== id));
+  };
   return (
     <>
       <Header view={view} setView={setView} setPostit={setPostit} />
@@ -62,8 +74,16 @@ function App() {
                 ) : (
                   <>
                     <Model view={view} cld={cld} />
-                    <PostForm view={view} />
-                    <PostAddForm postit={postit} setPostit={setPostit} />
+                    <PostForm
+                      removePost={removePost}
+                      posts={posts}
+                      view={view}
+                    />
+                    <PostAddForm
+                      postit={postit}
+                      setPostit={setPostit}
+                      addPost={addPost}
+                    />
                   </>
                 )}
               </div>

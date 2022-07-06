@@ -16,8 +16,7 @@ const RelationShip = ({ cld }) => {
           <span className={style.bannerSubTittle}>고객 관계</span>
           <br></br>
           <span className={style.bannerSubTxt}>
-            핵심자원이라는 빌딩 블록은 비즈니스를 원활히 진행하는 데 가장 필요한
-            중요 자산을 말한다.
+            특정한 고객 세그먼트와 어떤 형태의 관계를맺을 것인가를 의미한다.
           </span>
         </h1>
         <AdvancedImage cldImg={customer} className={style.bannerImg} />

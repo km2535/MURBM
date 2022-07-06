@@ -15,8 +15,8 @@ const Channel = ({ cld }) => {
           <span className={style.bannerSubTittle}>소통</span>
           <br></br>
           <span className={style.bannerSubTxt}>
-            핵심자원이라는 빌딩 블록은 비즈니스를 원활히 진행하는 데 가장 필요한
-            중요 자산을 말한다.
+            기업이 고객 세그먼트에게 가치를 제안하기 위해 커뮤니케이션을 하고
+            상품이나 서비스를 전달하는 방법을 말한다.
           </span>
         </h1>
         <AdvancedImage cldImg={channel2} className={style.bannerImg} />

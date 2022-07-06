@@ -15,8 +15,8 @@ const Proposition = ({ cld }) => {
           <span className={style.bannerSubTittle}>가치 제안</span>
           <br></br>
           <span className={style.bannerSubTxt}>
-            핵심자원이라는 빌딩 블록은 비즈니스를 원활히 진행하는 데 가장 필요한
-            중요 자산을 말한다.
+            특정한 고객 세그먼트가 필요로 하는 가치를 창조하기 위한 상품이나
+            서비스의 조합이 바로 '벨류 프로포지션'이다.
           </span>
         </h1>
         <AdvancedImage cldImg={value} className={style.bannerImg} />
@@ -26,71 +26,53 @@ const Proposition = ({ cld }) => {
         <div className={style.describe}>
           <div className={style.first}>
             <div className={style.firstTitle}>
-              <h2>물적 자원</h2>
+              <h2>새로움</h2>
             </div>
             <div className={style.firstDesc}>
               <span>
-                생산시설, 건물, 자동차, 기계, 시스템, 판매시스템
-                <br /> 네트워크 등, 월마트나 아마존 닷컴 같은 유통기업은
-                <br /> 대개 자본집약적인 물적 자원에 크게 의존한다.
-                <br /> 월마트는 매장과 물류 인프라라는 거대한 글로벌
-                <br /> 네트워크를 가지고 있다. 아마존 닷컴 역시 엄청난<br></br>
-                규모의 IT 장비와 창고, 물류 인프라를 보유하고 있다.
+                이전까지는 아무도 제시하지 않았기 때문에 필요한지 조차
+                <br /> 몰랐지만, 전적으로 새로운 니즈를 찾아내 충족시켜주는
+                <br /> 가치 제안이다. 늘 그런 것은 아니지만 대부분 첨단 기술과
+                <br /> 관련이 돼 있다. 이동통신아라는 전혀 새로운 분야를 형성한
+                <br /> 휴대전화가 그런 예가 될 것이다.<br></br>
               </span>
             </div>
           </div>
           <div className={style.sec}>
             <div className={style.secTitle}>
-              <h2>지적 자산</h2>
+              <h2>퍼포먼스</h2>
             </div>
             <div className={style.secDesc}>
               <span>
-                브랜드, 독점적 지식, 특허나 저작권, 파트너십 <br />
-                고객 데이터베이스 등 지적 자산은 비즈니스
+                제품/서비스 퍼포먼스를 향상시키는 것 역시 가치를 <br />
+                창조해내는 일반적이고도 전형적인 방법이였다. pc 분야는
                 <br />
-                모델을 구성하는 점점 더 중요한 핵심자원이 되어
+                끊임없이 성능이 개선된 제품을 양산함으로써, 퍼포먼스라는
                 <br />
-                가고 있다. 지적 자산은 개발 하기는 어렵지만
+                요소에 거의 전적으로 의존한 시장이다. 하지만 여기에는 늘
                 <br />
-                일단 개발에 성공하면 상당한 부가가치를 낳는다.
+                한계가 존재한다. pc보급이 일반화된 지금은 더 빠르고 용량이
                 <br />
+                크고 그래픽이 향상된 pc들이 지속적으로 출시된다 해도
+                <br />
+                비약적인 수요 창출은 불가능해졌다.
               </span>
             </div>
           </div>
           <div className={style.third}>
             <div className={style.thirdTitle}>
-              <h2>인적 자원 </h2>
+              <h2>커스터마이징</h2>
             </div>
             <div className={style.thirdDesc}>
               <span>
-                모든 기업이 인적 자원을 필요로 하지만, 특히 이 요소가
-                <br /> 두드러지는 비즈니스 모델이 있다.
-                <br /> 지식집약적이고 창조적인 산업 분야에서 인적자원은
+                제품/서비스를 개별 고객이나 세그먼트의 특화된 요구에
+                <br /> 딱 맞춤으로써 새로운 가치를 창조할 수도 있다.
+                <br /> 특히 최근 몇 년가 매스 커스터마이징이나 코-크레이션
                 <br />
-                특히 중요하다. 제약기업인 노바티스는 경험이 풍부한
+                이라는 개념이 매우 중요해졌다. 이런 방식을 취할 경우
                 <br />
-                과학자 집단과 숙련된 대규모 영업팀을 기반으로 함으
-                <br /> 로써, 인적 자원에 크게 의존한다.
-              </span>
-            </div>
-          </div>
-          <div className={style.fourth}>
-            <div className={style.fourthTitle}>
-              <h2>재무 자원</h2>
-            </div>
-            <div className={style.fourthDesc}>
-              <span>
-                비즈니스 모델에 따라 현금이나 신용한도, 핵심 인력을
-                <br /> 유인하기 위한 스톡옵션 등 재무적 자원이나 보장이
-                <br />
-                필요하다. 통신기기 제조업체 에릭슨은 재무적 자원을
-                <br />
-                효과적으로 활용하고 있다. 그들은 자본시장에서 자금
-                <br />
-                빌려 그중 일부로 장비 구매 고객들이게 벤터 파이
-                <br /> 낸싱을 제공함으로써 경재장들보다 우선적으로 주문을
-                <br />
-                확보한다.
+                고객 특성에 맞춘 상품이나 서비스를 제공하면서도 동시에
+                <br /> '규모의 경제'의 이점도 누릴 수 있다.
               </span>
             </div>
           </div>

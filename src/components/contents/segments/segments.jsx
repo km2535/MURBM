@@ -15,8 +15,8 @@ const Segments = ({ cld }) => {
           <span className={style.bannerSubTittle}>고객 관리</span>
           <br></br>
           <span className={style.bannerSubTxt}>
-            핵심자원이라는 빌딩 블록은 비즈니스를 원활히 진행하는 데 가장 필요한
-            중요 자산을 말한다.
+            '고객 세그먼트'라는 빌딩 블록은 기업이 제각기 얼마나 상이한 유형의
+            사람들 혹은 조직을 겨냥하는지를 규정한다.
           </span>
         </h1>
         <AdvancedImage cldImg={segments3} className={style.bannerImg} />
