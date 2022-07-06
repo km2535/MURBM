@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MURBM/static/css/main.fdefe054.css",
-    "main.js": "/MURBM/static/js/main.7181a43d.js",
+    "main.js": "/MURBM/static/js/main.e018e6ba.js",
     "static/media/postit.png": "/MURBM/static/media/postit.e066d609d40cdb7c65cf.png",
     "index.html": "/MURBM/index.html",
     "main.fdefe054.css.map": "/MURBM/static/css/main.fdefe054.css.map",
-    "main.7181a43d.js.map": "/MURBM/static/js/main.7181a43d.js.map"
+    "main.e018e6ba.js.map": "/MURBM/static/js/main.e018e6ba.js.map"
   },
   "entrypoints": [
     "static/css/main.fdefe054.css",
-    "static/js/main.7181a43d.js"
+    "static/js/main.e018e6ba.js"
   ]
 }
