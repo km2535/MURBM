@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "https://km2535.github.io/MURBM/static/css/main.14dcee7b.css",
-    "main.js": "https://km2535.github.io/MURBM/static/js/main.6f64d6c1.js",
+    "main.js": "https://km2535.github.io/MURBM/static/js/main.460f7827.js",
     "static/media/postit.png": "https://km2535.github.io/MURBM/static/media/postit.e066d609d40cdb7c65cf.png",
     "index.html": "https://km2535.github.io/MURBM/index.html",
     "main.14dcee7b.css.map": "https://km2535.github.io/MURBM/static/css/main.14dcee7b.css.map",
-    "main.6f64d6c1.js.map": "https://km2535.github.io/MURBM/static/js/main.6f64d6c1.js.map"
+    "main.460f7827.js.map": "https://km2535.github.io/MURBM/static/js/main.460f7827.js.map"
   },
   "entrypoints": [
     "static/css/main.14dcee7b.css",
-    "static/js/main.6f64d6c1.js"
+    "static/js/main.460f7827.js"
   ]
 }
