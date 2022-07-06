@@ -38,7 +38,11 @@ const PostAddForm = ({ postit, setPostit, addPost }) => {
 
   return (
     <>
-      {coor && <div className={style.coor} onClick={coordination}></div>}
+      {coor && (
+        <div className={style.coor} onClick={coordination}>
+          포스트잇을 붙일 위치를 클릭하세요
+        </div>
+      )}
       {postit && (
         <div className={style.wrapper} ref={wrapperRef}>
           <div className={style.container}>
