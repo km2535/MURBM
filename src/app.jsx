@@ -61,7 +61,7 @@ function App() {
   };
   return (
     <>
-      <Header view={view} setView={setView} setPostit={setPostit} />
+      <Header cld={cld} view={view} setView={setView} setPostit={setPostit} />
       <Routes>
         <Route
           path="/"

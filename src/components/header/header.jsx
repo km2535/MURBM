@@ -3,8 +3,9 @@ import style from "./header.module.css";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faPlusCircle } from "@fortawesome/free-solid-svg-icons";
-
-const Header = ({ view, setView, setPostit }) => {
+import { AdvancedImage } from "@cloudinary/react";
+const Header = ({ view, setView, setPostit, cld }) => {
+  const logo = cld.image("murbm/logo.png");
   const viewHandler = () => {
     setView(false);
   };
@@ -16,11 +17,8 @@ const Header = ({ view, setView, setPostit }) => {
       <div className={view === true ? style.back : style.nonBack}>
         <span className={style.logo}>
           <Link to="/">
-            <img
-              className={style.logoImg}
-              src="/images/logo-all-white.png"
-              alt="logo"
-            />
+            <AdvancedImage cldImg={logo} className={style.logoImg} />
+
             {view === false ? (
               <div className={style.home}></div>
             ) : (
