@@ -1,5 +1,5 @@
 {
-  "homepage": "https://km2535.github.io/MURBM/",
+
   "name": "murbm",
   "version": "0.1.0",
   "private": true,
@@ -47,5 +47,6 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0"
-  }
+  },
+    "homepage": "https://km2535.github.io/MURBM/"
 }
