@@ -31,7 +31,10 @@
 .home{
   position: absolute;
   top: 25px;
-  left: 95vw;
+  left: 90vw;
   font-size: 20px;
   color: white;
+}
+.icon{
+  margin: 0 15px 0 5px;
 }

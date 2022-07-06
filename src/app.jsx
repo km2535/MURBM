@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Cloudinary } from "@cloudinary/url-gen";
 import "./app.css";
@@ -14,6 +14,9 @@ import Channel from "./components/contents/channel/channel";
 import Segments from "./components/contents/segments/segments";
 import Structure from "./components/contents/structure/structure";
 import Revenue from "./components/contents/revenue/revenue";
+import PostAddForm from "./components/post/postAddForm/postAddForm";
+import PostForm from "./components/post/postForm/postForm";
+import LoadSpiner from "./components/loading/loadSpiner";
 
 function App() {
   const cld = new Cloudinary({
@@ -22,14 +25,31 @@ function App() {
     },
   });
   const [view, setView] = useState(false);
+  const [postit, setPostit] = useState(false);
+  const [model, setModel] = useState(false);
+  const [resize, setResize] = useState(false);
 
   const handlerView = () => {
     setView(true);
   };
+  const handlerResize = () => {
+    setResize(true);
+  };
+  useEffect(() => {
+    setModel(view);
+  }, [view]);
 
+  useEffect(() => {
+    window.addEventListener("resize", handlerResize);
+    if (resize) {
+      setTimeout(() => {
+        setResize(false);
+      }, 500);
+    }
+  }, [resize]);
   return (
     <>
-      <Header view={view} setView={setView} />
+      <Header view={view} setView={setView} setPostit={setPostit} />
       <Routes>
         <Route
           path="/"
@@ -37,7 +57,15 @@ function App() {
             <>
               <Home view={view} handlerView={handlerView} cld={cld} />
               <div className={view === true ? "visibleModel" : "hiddenModel"}>
-                <Model view={view} cld={cld} />
+                {resize ? (
+                  <LoadSpiner model={model} />
+                ) : (
+                  <>
+                    <Model view={view} cld={cld} />
+                    <PostForm view={view} />
+                    <PostAddForm postit={postit} setPostit={setPostit} />
+                  </>
+                )}
               </div>
             </>
           }
