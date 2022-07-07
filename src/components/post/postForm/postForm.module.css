@@ -19,6 +19,7 @@
   position: relative;
   top: 35%;
   left: 50%;
+  width: 95%;
   transform: translateX(-54%);
   text-align: center;
   font-family: 'Roboto Mono', monospace;
