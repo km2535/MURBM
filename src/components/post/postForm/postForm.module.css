@@ -25,3 +25,15 @@
   font-size: 1.2rem;
   line-height: 1.4rem;
 }
+@media screen and (max-width : 640px){
+  .post{
+    width: 35vw;
+    height: 35vw;
+  }
+  .title{
+    top: 15%;
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 0px 0px 0px 10px;
+  }
+}

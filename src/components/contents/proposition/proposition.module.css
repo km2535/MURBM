@@ -142,3 +142,38 @@
   } 
   
 }
+
+@media screen and (max-width : 640px){
+  .banner{
+    height: 30%;
+  }
+  .content{
+    height: 70vh;
+  }
+  .bannerSubTxt{
+    font-size: 14px;
+    white-space: normal;
+    line-height: 20px;
+  }
+  .contentImg{
+    display: none;
+    visibility: hidden; 
+  }
+  .describe{
+    width: 100vw;
+  }
+  .first,.sec,.third{
+    width: 100vw;
+    height: 20vh;
+}
+  .firstTitle,.secTitle,.thirdTitle{
+    height: 15%;
+    padding:0;
+    font-size: 1rem;
+  }
+  .firstDesc,.secDesc,.thirdDesc{
+    height: 10vh;
+    line-height: 15px;
+    padding: 0 0 0 10px;
+  }
+}

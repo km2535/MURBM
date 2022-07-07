@@ -85,3 +85,28 @@
   word-wrap: break-word;
   font-family: 'Roboto Mono', monospace;
 }
+
+@media screen and (max-width : 640px){
+  .container{
+    width: 80vw;
+    height: 90vw;
+  }
+  .container::after{
+    display: none;
+  }
+  .header, .content{
+    width: 65vw;
+  }
+  .input, .showtype{
+    width: 50vw;
+  }
+  .showtype{
+    top: 45%;
+    font-size: 1.5em;
+  }
+  .coor{
+    font-size: 1.2em;
+  }
+  
+
+}

@@ -130,3 +130,23 @@
 .link{
   height: 100vh;
 }
+
+
+@media screen and (max-width : 640px){
+  .link{
+    width: 100vw;
+    height: 100vh;
+  }
+  .viewModel{
+    flex-direction: column;
+  }
+  .modelContent{
+    width: 100vw;
+    height: 15vh;
+  }
+  #contentTwo{
+    width: 100vw;
+    flex-direction: row;
+  }
+  
+}

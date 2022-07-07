@@ -32,7 +32,7 @@ const Model = ({ view, cld }) => {
             </div>
           </Link>
         </article>
-        <article className={style.modelContent}>
+        <article className={style.modelContent} id={style.contentTwo}>
           <Link className={style.link} to="/activities">
             <div id={style.modelActivities}>
               <AdvancedImage cldImg={activity} className={style.modelImg} />
@@ -66,7 +66,7 @@ const Model = ({ view, cld }) => {
             </div>
           </Link>
         </article>
-        <article className={style.modelContent}>
+        <article className={style.modelContent} id={style.contentTwo}>
           <Link className={style.link} to="/relationships">
             <div id={style.modelRelationship}>
               <AdvancedImage cldImg={customer} className={style.modelImg} />

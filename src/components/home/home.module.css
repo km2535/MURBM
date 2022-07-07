@@ -78,3 +78,29 @@
 .content .sub{
   width: 40%;
 }
+
+
+@media screen and (max-width : 640px){
+   
+    .major{
+        top: 20%;
+        left: 35%;
+    }
+    .major h2{
+        font-size: 1.2rem;
+    }
+    .major h2::after{
+        width: 80vw;
+        top: 48%;
+    }
+    .content{
+        flex-direction: column;
+        left: 35%;
+        top: 50%;
+    }
+    .content .sub{
+        width: 100%;
+        margin-bottom: 20%;
+    }
+
+}

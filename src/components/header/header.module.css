@@ -38,3 +38,26 @@
 .icon{
   margin: 0 15px 0 5px;
 }
+
+@media screen and (max-width : 640px){
+  .header{
+    height: 70px;
+  }
+  .logo{
+    height: 70px;
+  }
+  .logoImg{
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .home{
+    display: flex;
+    flex-direction: row;
+    top: 25px;
+    left: 75vw;
+  }
+}
